@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Some necessary stuff: -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicol&aacute;s Guti&eacute;rrez Rol&oacute;n - Portfolio</title>
+    <!--CSS file-->
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Nicol&aacute;s Guti&eacute;rrez Rol&oacute;n</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" class="scroll-link active-link">home</a></li>
+                <li><a href="#about" class="scroll-link">about</a></li>
+                <li><a href="#projects" class="scroll-link">projects</a></li>
+                <li><a href="#blog" class="scroll-link">blog</a></li> 
+                <li><a href="#contact" class="scroll-link">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- non-main sections -->
+
+<section id="about" class="hidden">
+    <h2>about me</h2>
+    <p>i'm a data scientist with a passion for natural language processing and linguistics.
+    i studied mathematics and statistics at the university of warwick
+    this website is my personal portfolio, displaying some of my projects, ideas, blogs, and more!
+    all the code for this site and the projects is on my github.
+    </p>
+</section>
+
+<section id="projects" class="hidden">
+    <!-- Project 1: Wine Classification -->
+    <div class="project">
+        <h2>Wine Classification</h2>
+        <p>This is a short project using techniques of data exploration, visualisation and regression for classification.</p>
+        <a href="project1-code-link">View Code</a>
+        <div class="project-graphics">
+          <img src="wines.png" alt="Graphic 1" class="resize-image">
+          <p>The previous graph shows the density distributions of the variable alcohol
+            for each of the classes.
+          </p>
+        </div>
+    </div>    
+    <!-- Project 2: Word Embedding Visualisation -->
+    <div class="project">
+        <h2>Word Embedding Visualisation</h2>
+        <p>this project focused on word embeddings with Spacy and explored how 
+            word embeddings can capture semantic relationships by categorising words
+            from 4 different languages
+        </p>
+        <a href="project1-code-link">View Code</a>
+        <div class="project-graphics">
+            <img src="embeddings.png" alt="Graphic 2" class="resize-image">
+            <p>The previous graph shows the density distributions of the variable alcohol
+              for each of the classes.
+            </p>
+        </div>
+    </div>
+    <!-- animation 1 -->
+    <div id="animation" class="project">
+        <h2>Animation with Javascript</h2>
+        <p>this project can be seen here now!</p>
+        <div id="container"></div>
+        <button id="play-button" class="start">Start</button>
+        <audio id="collisionSound" src="collision.mp3" autoplay="false"></audio>
+    </div>
+</section>
+
+<section id="contact" class="hidden">
+    <!--div id="success-message" style="display: none; background-color: green; color: white; padding: 10px; position: fixed; top: 10px; left: 50%; transform: translateX(-50%);">
+        <?php if (isset($successMessage)) {
+            echo "$successMessage ✓";
+        } ?>
+    </div-->
+    <h>Contact</h>
+    <p>email: ngutierrezrolon@gmail.com</p>
+    <form action="https://formspree.io/f/mqkvwwko" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+    <p>Get my cv here: <a href="cv_copy.pdf" download>here</a></p>
+</section>
+
+
+<section id="blog" class="hidden">
+    <div class="entry">
+        <h2>Blog Entry 1: Making a website</h2>
+        <p>Making a website is very useful and can be very simple.
+            This website is my personal portfolio and was made using HTML, CSS and Javascript.
+            <h3>HTML</h3>
+            HTML (HyperText Markup Language) is the part responsible for the structure of the content in the webpage. 
+            The subsections, headers, footers, hyperlinks, and main body of text are all done in this language.
+            <h3>CSS</h3>
+            CSS (Cascading Style Sheets) is the part responsible of all the main visuals, including fonts
+            colors (in hexcode), spacing, etc.
+            <h3>JavaScript</h3>
+            Javascript is the most dynamic part, used to add interactivity,
+            constantly updating sections, or any other advanced feature.
+            <br>
+            Day 1:
+            Set up of the HTML structure, Header, Button, Main section, non main sections, footer.
+            set up CSS for a basic look with a matching color palette.
+            compiled list of chengyu in csv
+            javascript for daily chengyu and button functionalities.
+            Day 2:
+            started with fixing main page and non-main page sectioning 
+            also fixing scroll feature.
+            added more content to project section, added contact form (and php file pending)
+            changed color palette, fonts and 
+            Day 3:
+            fixed active-link functions, worked on text for project and blog essays.
+        </p>
+    </div>
+    <div class="entry">
+        <h2>Blog Entry 2: What is a "good enough" shuffle?</h2>
+        <p>
+            Random shuffles, randomness, card shuffling algorithms and more.
+            If you like a good game of cards, whether that be (game1), game2 or game3, most card games 
+            start with a shuffle. As the game starts and the people around the table look at the cards, 
+            they groan and complain “who shuffled these?”. I want to talk about this conundrum of the shuffle, 
+            what the meaning of the word “random” even is, and explore how its practically applied and computationally 
+            replicated.
+            <h3>1- The Shuffle</h3>
+
+            There's several standard ways to shuffle.
+            Casino shuffle.
+            Overhand shuffle.
+            Not all shuffles are mixing the same amount of cards, if you think about it.
+            The basic overhand shuffle is removing a sector of cards from the deck, merging the rest of the deck and then adding them back on top.
+            In this case a sector of size n is simply being displaced, but that sector will retain its original order entirely.
+            How many “shuffles” exist? 52!
+        </p>
+    </div>
+</section>
+
+    <!-- Main Section -->
+<main id="main">
+    <section id="home">
+        <blockquote>This is our inspirational main page.</blockquote>
+        <h1>Welcome to my website!</h1>
+        <div id="profile">
+            <h3>Profile</h3>
+            <p>i'm nico, i made this site, i studied this and that,
+                im knowledgeable in these areas, im passionate about this,
+                currently learning that language, let me change one thing
+            </p>
+        </div>
+        <div>project preview
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="wines.png" alt="Project 1">
+                </div>
+                <div class="grid-item">
+                    <img src="embeddings.png" alt="Project 2">
+                </div>
+            </div>            
+        </div>
+    </section>
+    <section id="chengyu" class="hidden">
+        <h2>Daily 成语</h2>
+        <p> 
+            one of the languages i'm studying is chinese, so in this section 
+            there is a chengyu that is changed daily*. Chengyu are chinese 4-character
+            phrases or idioms.
+        </p>
+        <br>
+        <p id="chengyu-text"></p>
+        <p id="chengyu-pinyin"></p>
+        <p id="chengyu-definition"></p>
+    </section>
+</main>
+
+    <!-- Footer -->
+<footer>
+    <p>Welcome to the footer.<a href="#chengyu" id="dailychengyulink" class="scroll-link"></a></p>
+</footer>
+<!-- JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
