@@ -29,7 +29,7 @@
     <p>i'm a data scientist with a passion for natural language processing and linguistics.
     i studied mathematics and statistics at the university of warwick
     this website is my personal portfolio, displaying some of my projects, ideas, blogs, and more!
-    all the code for this site and the projects is on my github.
+    all the code for this site and the projects is public on <a href="https://github.com/ngutierrezrolon">my github.</a>
     </p>
 </section>
 
@@ -38,7 +38,7 @@
     <div class="project">
         <h2>Wine Classification</h2>
         <p>This is a short project using techniques of data exploration, visualisation and regression for classification.</p>
-        <a href="project1-code-link">View Code</a>
+        <a href="https://github.com/ngutierrezrolon/data-science-projects/blob/main/wine_classification.ipynb">View Code</a>
         <div class="project-graphics">
           <img src="wines.png" alt="Graphic 1" class="resize-image">
           <p>The previous graph shows the density distributions of the variable alcohol
@@ -53,18 +53,18 @@
             word embeddings can capture semantic relationships by categorising words
             from 4 different languages
         </p>
-        <a href="project1-code-link">View Code</a>
+        <a href="https://github.com/ngutierrezrolon/data-science-projects/blob/main/word_similarity.ipynb">View Code</a>
         <div class="project-graphics">
             <img src="embeddings.png" alt="Graphic 2" class="resize-image">
-            <p>The previous graph shows the density distributions of the variable alcohol
-              for each of the classes.
+            <p>The previous graph shows the vectorisation embedding done by SpaCy of different semantically 
+                related words in different languages, projected to a 2d space. 
             </p>
         </div>
     </div>
     <!-- animation 1 -->
     <div id="animation" class="project">
         <h2>Animation with Javascript</h2>
-        <p>this project can be seen here now!</p>
+        <p>this project can be seen here now! its a simple animation in javascript.</p>
         <div id="container"></div>
         <button id="play-button" class="start">Start</button>
         <audio id="collisionSound" src="collision.mp3" autoplay="false"></audio>
@@ -118,10 +118,14 @@
             Day 2:
             started with fixing main page and non-main page sectioning 
             also fixing scroll feature.
-            added more content to project section, added contact form (and php file pending)
-            changed color palette, fonts and 
+            added more content to project section, added contact form (and php file)
+            changed color palette, fonts.
             Day 3:
             fixed active-link functions, worked on text for project and blog essays.
+            Day 4:
+            fixed contact form compatibility using formspree. added animation.
+            Day 5:
+            fixed animation and made live with Github pages.
         </p>
     </div>
     <div class="entry">
@@ -133,15 +137,48 @@
             they groan and complain “who shuffled these?”. I want to talk about this conundrum of the shuffle, 
             what the meaning of the word “random” even is, and explore how its practically applied and computationally 
             replicated.
-            <h3>1- The Shuffle</h3>
 
             There's several standard ways to shuffle.
-            Casino shuffle.
-            Overhand shuffle.
+
+            <h3>1- The Overhand Shuffle</h3>
             Not all shuffles are mixing the same amount of cards, if you think about it.
             The basic overhand shuffle is removing a sector of cards from the deck, merging the rest of the deck and then adding them back on top.
             In this case a sector of size n is simply being displaced, but that sector will retain its original order entirely.
-            How many “shuffles” exist? 52!
+
+            <h3>2- The Perfect Shuffle</h3>
+            Most people would describe a shuffle as breaking the deck in two halves
+            and then intermixing them. If the interleaving of the cards is done such that
+            the two packets strictly alternate, then this is known as a perfect shuffle.
+            Other names for it are Faro shuffle in USA, or Weave shuffle in UK.
+            Depending on where the original top and bottom cards go, they are considered an out-shuffle or an in-shuffle.
+            In an out-shuffle, the first and last card retain their positions exactly.
+            In an in-shuffle, the first card will now go second, and the last card will go second-to last.
+
+            k perfect in-shuffles will restore the order of an n-card deck if [eq 2^k\congruent 1 (mod n+1)].
+            for a regular 52-card deck, this means 2^52\congruent 1 mod 53, so after 52 in-shuffles, the deck is back to its original order.
+
+            k perfect out-shuffles will restore the order of an n-card deck if []
+            2^8\congruent 1 mod 51, and only 6 faro out-shuffles are required to restore the order in a 64-card deck.
+
+            <h3>3- The Riffle</h3>
+            Most people don't perform perfect shuffles, and doing these would actually be to the detriment of randomness desired for card games.
+            This shuffle isn't random, it produces an entirely predictable pattern.
+            This is also why Faro shuffles are common in magic tricks.
+            What most people do is normally referred to as a Riffle Shuffle.
+            the deck is partitioned in two, then interleaved arbitrarily. For example, groups of sizes between
+            1-4 are interleaved from each half of the deck.
+            A mathematically precise definition exists credited to Gilbert-Shannon-Reeds.
+            The Gilbert-Shannon-Reeds model assigns probabilities to each permutation.
+            Bayer and Diaconis's paper titled [] then analysed this model, and showed that the total variation distance from uniform distribution show 
+            a distinctive spike from 5, where the total variation distance was still close to 1, to 7 where this measure was of 0.331. 
+            This mathematical result suggests 7 riffle shuffles to produce a sufficiently random pattern, such that this combination might not have been seen ever before.
+
+        </p>
+    </div>
+    <div class="entry">
+        <h2>Blog Entry 3: The story of King Gou Jian of Yue</h2>
+        <p>
+            content
         </p>
     </div>
 </section>
@@ -153,12 +190,13 @@
         <h1>Welcome to my website!</h1>
         <div id="profile">
             <h3>Profile</h3>
-            <p>i'm nico, i made this site, i studied this and that,
-                im knowledgeable in these areas, im passionate about this,
-                currently learning that language, let me change one thing
+            <p>i'm nico, i made this site. it's my personal portfolio showcasing my projects
+                in data analysis, regression and classification tasks, natural language processing
+                and more.
             </p>
         </div>
-        <div>project preview
+        <div>
+            <h2>projects preview</h2>
             <div class="grid-container">
                 <div class="grid-item">
                     <img src="wines.png" alt="Project 1">
