@@ -16,9 +16,14 @@ li {
 body {
   font-family: 'avenir';
   background-color: #a9a7b9;
-  margin-top: 130px;
+  margin-top: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
   margin-left: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   text-align: justify;
   position: relative;
 }
@@ -35,7 +40,7 @@ header {
   margin-left: 0px;
   position: fixed;
   top: 0;
-  z-index: 0;
+  z-index: 2;
 }
  
 header h1{
@@ -60,9 +65,12 @@ header ul li{
 main {
     width: 90%;
     min-height: 100vh;
-    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
     margin-left: 10px;
-    padding: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
 }
 
 .grid-container {
@@ -142,9 +150,13 @@ div {
     margin-right: 10px;
     padding: 10px;
 }
-#projects, #blog, #animation, #contact {
+#projects, #blog, #animation {
     padding: 10px;
-    margin: 10px;
+    padding-bottom: 40px;
+}
+#contact {
+    padding: 10px;
+    min-height: auto;
 }
 .start {
     background-color: #01796F;
@@ -166,6 +178,7 @@ div {
     position: relative;
     width: 90%;
     height: 400px;
+    z-index: 1;
     background-color: #99949e;
 }
 .dvd-logo {
@@ -187,6 +200,7 @@ footer {
   color: #3A3740;
   text-align: left;
   padding: 10px 0;
+  z-index: 2;
 }
 footer p {
     margin-left: 10px;
@@ -195,7 +209,13 @@ footer p {
 /* Media Query for Responsiveness */
 /* --------------------------------------------- */
 @media screen and (max-width: 768px) {
-  .container {
-    padding: 10px;
-  }
+    .header {
+        padding: 10px;
+        overflow: hidden;
+    }
+    .container {
+        padding: 10px;
+        overflow: hidden;
+    }
+
 }
