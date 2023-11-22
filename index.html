@@ -37,13 +37,18 @@
     <section id="projects" class="hidden">
         <!-- Project 1: Wine Classification -->
         <div class="project">
-            <h2>Wine Classification</h2>
-            <p>This is a short project using techniques of data exploration, visualisation and regression for classification.</p>
+            <h2>Pokemon data analysis</h2>
+            <p>This is a short project using techniques of data exploration, visualisation to investigate, using statistically rigorous 
+                techniques, some of the variables and their correlations.</p>
             <a href="https://github.com/ngutierrezrolon/data-science-projects/blob/main/wine_classification.ipynb">View Code</a>
             <div class="project-graphics">
-              <img src="wines.png" alt="Graphic 1" class="resize-image">
-              <p>The previous graph shows the density distributions of the variable alcohol
-                for each of the classes.
+              <img src="images/pok_graph1.png" alt="Graphic 1" class="resize-image">
+              <p>The previous graph shows the density distributions of the main variables.
+                The analysis, which you can see more in detail on github, features some statistical tests for correlation.
+                In one instance, the Welch two sample test is used to compare the average power statistics for legendary and non-legendaries.
+                Additionally, after performing a simple Anova test to check for correlations between weight and both type variables, a post-hoc
+                Tukey's HSD test is performed on each of the type pairs to take notice of how type pairs interact and find which type pairs on 
+                average have the highest and lowest weight.
               </p>
             </div>
         </div>    
@@ -56,7 +61,7 @@
             </p>
             <a href="https://github.com/ngutierrezrolon/data-science-projects/blob/main/word_similarity.ipynb">View Code</a>
             <div class="project-graphics">
-                <img src="embeddings.png" alt="Graphic 2" class="resize-image">
+                <img src="images/embeddings.png" alt="Graphic 2" class="resize-image">
                 <p>The previous graph shows the vectorisation embedding done by SpaCy of different semantically 
                     related words in different languages, projected to a 2d space. 
                 </p>
@@ -142,15 +147,15 @@
                 In an in-shuffle, the first card will now go second, and the last card will go second-to last.
     
                 k perfect in-shuffles will restore the order of an n-card deck if 
-                <img src="equation1.png" loading="lazy" style="max-width: 100%; max-height: 1em" alt="2^k congruent 1 mod n+1">.
+                <img src="images/equation1.png" loading="lazy" style="max-width: 100%; max-height: 1em" alt="2^k congruent 1 mod n+1">.
                 For a regular 52-card deck, this means 
-                <img src="equation2.png" loading="lazy" style="max-width: 100%; max-height: 1em" alt="2^52 congruent 1 mod 53">, 
+                <img src="images/equation2.png" loading="lazy" style="max-width: 100%; max-height: 1em" alt="2^52 congruent 1 mod 53">, 
                 so after 52 in-shuffles, the deck is back to its original order.
     
                 k perfect out-shuffles will restore the order of an n-card deck if 
-                <img src="equation3.png" loading="lazy" style="max-width: 100%; max-height: 1em" alt="2^k congruent 1 mod n-1">.
+                <img src="images/equation3.png" loading="lazy" style="max-width: 100%; max-height: 1em" alt="2^k congruent 1 mod n-1">.
                 For a 52-card deck, this means
-                <img src="equation4.png" loading="lazy" style="max-width: 100%; max-height: 1em" alt="2^8 congruent 1 mod 51">, 
+                <img src="images/equation4.png" loading="lazy" style="max-width: 100%; max-height: 1em" alt="2^8 congruent 1 mod 51">, 
                 so after only 8 out-shuffles the deck is back to its original order! and for a 64-card deck, only 6 faro out-shuffles are required to restore the order.
     
                 <h3>3- The Riffle</h3>
@@ -162,7 +167,7 @@
                 1-4 are interleaved from each half of the deck.
                 A mathematically precise definition exists credited to Gilbert-Shannon-Reeds. The Gilbert-Shannon-Reeds model assigns probabilities to each permutation.
                 For example, when partitioning the deck, the probability of selecting one group of k cards and one of n-k cards is 
-                <img src="equation5.png" loading="lazy" style="max-width: 100%; max-height: 1em" alt="n choose k /2^n">
+                <img src="images/equation5.png" loading="lazy" style="max-width: 100%; max-height: 1em" alt="n choose k /2^n">
 
                 Bayer and Diaconis's paper titled <a href="https://statweb.stanford.edu/~cgates/PERSI/papers/bayer92.pdf"> Trailing the Dovetail Shuffle to its Lair</a> then analysed this model, and showed that the total variation distance from uniform distribution show 
                 a distinctive spike from 5, where the total variation distance was still close to 1, to 7 where this measure was of 0.331. 
@@ -171,9 +176,11 @@
             </p>
         </div>
         <div class="entry">
-            <h2>Blog Entry 3: The story of King Gou Jian of Yue</h2>
+            <h2>Blog Entry 3: SQL 101</h2>
             <p>
-                The spring and autumn period during the Zhao dynasty
+                1- What can you do wiht SQL
+                2- How is it different from programming with R
+                3- ...
             </p>
         </div>
     </section>
@@ -191,10 +198,10 @@
             <h2>projects preview</h2>
             <div class="grid-container">
                 <div class="grid-item">
-                    <img src="wines.png" alt="Project 1">
+                    <img src="images/pok_graph1.png" alt="Project 1">
                 </div>
                 <div class="grid-item">
-                    <img src="embeddings.png" alt="Project 2">
+                    <img src="images/embeddings.png" alt="Project 2">
                 </div>
             </div>            
         </div>
