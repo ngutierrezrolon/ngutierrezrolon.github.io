@@ -44,11 +44,12 @@
             <div class="project-graphics">
               <img src="images/pok_graph1.png" alt="Graphic 1" class="resize-image">
               <p>The previous graph shows the density distributions of the main variables.
-                The analysis, which you can see more in detail on github, features some statistical tests for correlation.
+                <br><br>
+                The analysis features some statistical tests for correlation.
                 In one instance, the Welch two sample test is used to compare the average power statistics for legendary and non-legendaries.
                 Additionally, after performing a simple Anova test to check for correlations between weight and both type variables, a post-hoc
                 Tukey's HSD test is performed on each of the type pairs to take notice of how type pairs interact and find which type pairs on 
-                average have the highest and lowest weight.
+                average have the highest and lowest weight. This and more statistical analysis of pokemon data on github.
               </p>
             </div>
         </div>    
@@ -64,7 +65,13 @@
                 <img src="images/embeddings.png" alt="Graphic 2" class="resize-image">
                 <p>The previous graph shows the vectorisation embedding done by SpaCy of different semantically 
                     related words in different languages, projected to a 2d space. 
+                    <br>
+                    Taking the japanese vectors in particular, its clear that after although the red group is not linearly
+                    separable in the original feature space, the pca of the vectors, that applying a radial basis function kernel
+                    maps the data points to a higher dimensional space where they are linearly separable. By fitting an (SVM)
+                    with an RBF kernel, we can clearly see in the following graph that the vectors are linearly separable.
                 </p>
+                <img src="images/jap_rbf.png" alt="Missing graphic" class="resize-image">
             </div>
         </div>
         <!-- animation 1 -->
@@ -188,14 +195,14 @@
         <blockquote>This is our inspirational main page.</blockquote>
         <h1>Welcome to my website!</h1>
         <div id="profile">
-            <h3>Profile</h3>
+            <h2>Profile</h2>
             <p>i'm nico, i made this site. it's my personal portfolio showcasing my projects
                 in data analysis, regression and classification tasks, natural language processing
                 and more.
             </p>
         </div>
         <div>
-            <h2>projects preview</h2>
+            <h2>Projects preview</h2>
             <div class="grid-container">
                 <div class="grid-item">
                     <img src="images/pok_graph1.png" alt="Project 1">

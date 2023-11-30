@@ -15,7 +15,7 @@ li {
 /* --------------------------------------------- */
 body {
   font-family: 'avenir';
-  background-color: #a9a7b9;
+  background-color: rgb(193, 192, 209);
   margin-top: 25vh;
   display: flex;
   justify-content: center;
@@ -31,10 +31,10 @@ body {
 /* Header Styles */
 /* --------------------------------------------- */
 header {
-  background-color: #3B74BF;
+  background-color: rgb(193, 192, 209);
   color: #66A3D9;
   padding: 10px;
-  text-align: left;
+  text-align: center;
   width: 100%;
   height: auto;
   margin-left: 0px;
@@ -46,7 +46,7 @@ header {
 header h1{
     font-family: 'Didot';
     font-size: 52px;
-    color: #66A3D9;
+    color: #A66D60;
 }
 
 header nav ul {
@@ -101,7 +101,7 @@ h2 {
 /* Link Styles */
 /* --------------------------------------------- */
 a {
-  color: #66a3d9;
+  color: #5192d8;
   text-decoration: none;
   font-family: 'avenir';
   font-style: italic;
@@ -135,7 +135,7 @@ a.active-link {
 
 /*Non-main section styles*/
 div {
-    background-color: #c8c0ce; 
+    background-color: rgb(194, 178, 205); 
     color: #292825; 
     padding: 10px; 
     gap: 10px;
@@ -205,6 +205,7 @@ footer {
 footer p {
     margin-left: 10px;
 }
+
 
 /* Media Query for Responsiveness */
 /* --------------------------------------------- */
