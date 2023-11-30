@@ -16,14 +16,14 @@ li {
 body {
   font-family: 'avenir';
   background-color: rgb(193, 192, 209);
-  margin-top: 25vh;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
   flex-direction: column;
   margin-left: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: justify;
   position: relative;
 }
@@ -64,7 +64,7 @@ header ul li{
 /* --------------------------------------------- */
 main {
     width: 90%;
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     flex-direction: column;
     margin-top: 10vh;
@@ -149,8 +149,9 @@ div {
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px;
+    min-height: auto;
 }
-#projects, #blog, #animation {
+#projects, #blog, #animation, #home {
     padding: 10px;
     padding-bottom: 40px;
 }
