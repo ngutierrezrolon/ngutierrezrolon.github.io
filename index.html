@@ -28,7 +28,7 @@
     <section id="about" class="hidden">
         <h2>about me</h2>
         <p>i'm a data scientist with a passion for natural language processing and linguistics.
-        i studied mathematics and statistics at the university of warwick
+        i studied mathematics and statistics at the university of warwick, currently doing some courses with stanford centre for professional development.
         this website is my personal portfolio, displaying some of my projects, ideas, blogs, and more!
         all the code for this site and the projects is public on <a href="https://github.com/ngutierrezrolon">my github.</a>
         </p>
@@ -100,6 +100,29 @@
             <div id="container"></div>
             <button id="play-button" class="start">Start</button>
             <audio id="collisionSound" src="collision.mp3" autoplay="false"></audio>
+        </div>
+        <!-- pi -->
+        <div>
+            <h2>Digits of Pi</h2>
+            <p>The irrational number pi is object to lots of study. One of the properties yet to be proven about it is 
+                its normal, meaning theoretically any numnber or sequence of numbers should occur with equal proportion
+                like a uniform distribution. I decided to test this out up to 10,000 digits!
+            </p>
+            <a href="">View Code!</a>
+            <p>Initially I set out to check using a bar graph if all digits have roughly the same proportional amounts:</p>
+            <div class="project-graphics">
+                <img src="images/barc.png" alt="barcode" class="resize-image">
+            </div>
+            <p>We can see all numbers are roughly equal, so I want to test a different way to observe the normality:
+                Set a condition to divide the digits. I suggested two options, one by even/odd and one by larger/lower than 5. 
+                Then we give half the numbers +1 and the remaining -1 and compute a sum. Under normality we would expect it to be close to zero (asymptotically).
+                The results are in the next graphs:
+            </p>
+            <div class="project-graphics">
+                <img src="images/pi_even.png" alt="Graph with Even/Odd rule" class="resize-image">
+                <img src="images/pi_lower.png" alt="graph with lower/higher rule" class="resize-image">
+            </div>
+            <p>In conclusion, yes.</p>
         </div>
     </section>
     
@@ -214,7 +237,7 @@
         <div id="profile">
             <h2>Profile</h2>
             <p>i'm nico, i made this site. it's my personal portfolio showcasing my projects
-                in data analysis, regression and classification tasks, natural language processing
+                in mathematics, data analysis, regression and classification, natural language processing
                 and more.
             </p>
         </div>
