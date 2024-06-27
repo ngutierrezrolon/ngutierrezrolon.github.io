@@ -151,9 +151,12 @@ div {
     padding: 10px;
     min-height: auto;
 }
-#projects, #blog, #animation, #home {
+#projects, #animation, #home {
     padding: 10px;
     padding-bottom: 40px;
+}
+#blog {
+    display: none;
 }
 #contact {
     padding: 10px;
